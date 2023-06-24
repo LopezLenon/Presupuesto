@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     calidadValue.textContent = Math.round(calidad) + "%";
     rapidezValue.textContent = Math.round(rapidez) + "%";
-    descuentoValue.textContent = Math.round(descuento / 4) + "%";
+    descuentoValue.textContent = Math.round(descuento / 10) + "%";
   }
 
   calidadSlider.addEventListener("input", updateValues);
