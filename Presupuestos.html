@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Presupuesto</title>
+  <style>
+    .slider-container {
+      margin-bottom: 20px;
+    }
+    .slider-label {
+      display: inline-block;
+      width: 80px;
+    }
+    .slider {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Presupuesto</h1>
+
+  <div class="slider-container">
+    <label class="slider-label">Calidad:</label>
+    <input id="calidad-slider" class="slider" type="range" min="0" max="100" value="0">
+    <span id="calidad-value">0%</span>
+  </div>
+
+  <div class="slider-container">
+    <label class="slider-label">Rapidez:</label>
+    <input id="rapidez-slider" class="slider" type="range" min="0" max="100" value="0">
+    <span id="rapidez-value">0%</span>
+  </div>
+
+  <div class="slider-container">
+    <label class="slider-label">Descuento:</label>
+    <input id="descuento-slider" class="slider" type="range" min="0" max="100" value="0">
+    <span id="descuento-value">0%</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
