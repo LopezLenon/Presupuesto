@@ -3,37 +3,40 @@
 <head>
   <title>Presupuesto</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
     .slider-container {
       margin-bottom: 20px;
     }
     .slider-label {
-      display: inline-block;
-      width: 80px;
+      font-weight: bold;
     }
-    .slider {
-      width: 300px;
+    .slider-value {
+      font-weight: bold;
+      margin-left: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Presupuesto</h1>
-
+  
   <div class="slider-container">
     <label class="slider-label">Calidad:</label>
-    <input id="calidad-slider" class="slider" type="range" min="0" max="100" value="0">
-    <span id="calidad-value">0%</span>
+    <input type="range" id="calidad-slider" min="0" max="100" step="1" value="0">
+    <span class="slider-value" id="calidad-value">0%</span>
   </div>
 
   <div class="slider-container">
     <label class="slider-label">Rapidez:</label>
-    <input id="rapidez-slider" class="slider" type="range" min="0" max="100" value="0">
-    <span id="rapidez-value">0%</span>
+    <input type="range" id="rapidez-slider" min="0" max="100" step="1" value="0">
+    <span class="slider-value" id="rapidez-value">0%</span>
   </div>
 
   <div class="slider-container">
     <label class="slider-label">Descuento:</label>
-    <input id="descuento-slider" class="slider" type="range" min="0" max="100" value="0">
-    <span id="descuento-value">0%</span>
+    <input type="range" id="descuento-slider" min="0" max="100" step="1" value="0">
+    <span class="slider-value" id="descuento-value">0%</span>
   </div>
 
   <script src="script.js"></script>
